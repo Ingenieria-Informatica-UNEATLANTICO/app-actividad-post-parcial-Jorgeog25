@@ -1,0 +1,24 @@
+@startuml
+
+hide circle 
+
+state CreadorDeContenidoYViewer {
+  [*] --> Desconocido : Sin Registrar
+  
+  state rombo <<choice>>
+
+  Desconocido --> rombo : se registra
+  rombo --> ViewerEnProceso : se registra como Viewer
+  rombo --> CreadorEnProceso : se registra como CreadorDeContenido
+
+  ViewerEnProceso --> Viewer : Acepta condiciones
+  Viewer --> [*] : Fin Registro
+
+  CreadorEnProceso --> Viewer : Acepta condiciones mínimas
+  CreadorEnProceso --> CreadorDeContenido : Completa requerimientos adicionales
+  CreadorDeContenido --> [*] : Fin Registro
+
+  CreadorDeContenido --> Viewer : Accede como Viewer a otros streams
+}
+
+@enduml
