@@ -12,6 +12,6 @@
 ## Diagrama de Estados 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Estados de Recomendación](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-Jorgeog25/blob/main/images/MdD2-DdEdR.svg)| [Ver código](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-Jorgeog25/blob/main/modelosUML/MdD2-DdEdR.puml) |
+| ![Diagrama de Estados de Recomendación](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-Jorgeog25/blob/main/images/MdD2-DdEdR.svg)| [Ver código](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-Jorgeog25/blob/main/modelosUML/MdD2-%20DdEdR.puml) |
 | ![Diagrama de Estados de Usuario](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-Jorgeog25/blob/main/images/MdD2-DdEdU.svg)| [Ver código](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-Jorgeog25/blob/main/modelosUML/MdD2-DdEdU.puml) |
 | ![Diagrama de Estados de Suscripción](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-Jorgeog25/blob/main/images/MdD2-DdEdS.svg)| [Ver código](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-Jorgeog25/blob/main/modelosUML/MdD2-DdEdS.puml) |
