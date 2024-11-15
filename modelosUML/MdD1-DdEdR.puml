@@ -1,0 +1,18 @@
+@startuml
+
+state Recomendacion {
+  [*] --> SinRecomendacion : Usuario registrado sin subscripción
+  
+  state rombo <<choice>>
+
+  SinRecomendacion -r-> rombo : se subscribe
+  Recomienda <-r- rombo : si
+  NoHayDatos <-r- rombo : no
+
+  Recomienda --> Categoria : Sobre
+  NoHayDatos --> SinRecomendacion
+
+  Categoria -r-> [*] : Fin Recomendacion
+}
+
+@enduml
