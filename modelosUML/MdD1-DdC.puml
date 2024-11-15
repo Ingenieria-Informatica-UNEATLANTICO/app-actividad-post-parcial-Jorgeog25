@@ -11,6 +11,7 @@ class Viewer{}
 class Suscripcion{}
 class Categoria{}
 class Contenido{}
+class Recomendación{}
 
 Usuario --> Perfil : tiene 
 Usuario --> Condiciones : acepta
