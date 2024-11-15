@@ -1,0 +1,19 @@
+@startuml
+
+state CreadorDeContenidoYViewer {
+  [*] --> Desconocido : Sin Registrar
+  
+  state rombo <<choice>>
+
+  Desconocido --> rombo : se registra como viewer
+  rombo --> ViewerEnProceso : sí
+  rombo --> EnProceso : no
+
+  ViewerEnProceso --> Viewer : Si acepta condiciones
+  EnProceso --> CreadorDeContenido : Acepta condiciones y completa requerimientos
+
+  Viewer --> [*] : Fin Registro
+  CreadorDeContenido --> [*] : Fin Registro
+}
+
+@enduml
