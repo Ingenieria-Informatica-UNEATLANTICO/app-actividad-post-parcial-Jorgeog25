@@ -1,0 +1,31 @@
+@startuml
+hide circle
+hide empty members
+
+object "Ordenador : Dispositivo" as Dispositivo1
+object "Ibai : Perfil" as Perfil1
+object "Gestión de Derechos digitales : Condiciones" as Condiciones1
+object "Ibai Llanos : CreadorDeContenido, Viewer" as CreadorDeContenido
+object "Tablet : Dispositivo" as Dispositivo2
+object "Jorge25 : Perfil" as Perfil2
+object "Politica de Privacidad : Condiciones" as Condiciones2
+object "Jorge Otero : Viewer" as Viewer
+object "VIP de Ibai : Suscripcion" as Suscripcion
+object "Recomendación de Videojuegos : Recomendación" as Recomendación
+object "Videojuegos : Categoria" as Categoria
+object "League of Legends : Contenido" as Contenido
+object "Suscripción a un Streamer : Suscripcion" as SuscripcionIbai
+
+Dispositivo1 --> CreadorDeContenido : usa
+Perfil1 --> CreadorDeContenido : tiene
+Condiciones1 --> CreadorDeContenido : acepta
+CreadorDeContenido --> Categoria : hace
+Categoria --> Contenido : pertenece
+Dispositivo2 --> Viewer : usa
+Perfil2 --> Viewer : tiene 
+Condiciones2 --> Viewer : acepta
+Viewer --> Suscripcion : tiene su 
+Suscripcion --> Recomendación : establece 
+Recomendación --> Categoria : sobre
+CreadorDeContenido --> SuscripcionIbai : tiene su
+@enduml

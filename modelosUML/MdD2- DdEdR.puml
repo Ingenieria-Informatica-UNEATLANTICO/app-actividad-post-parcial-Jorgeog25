@@ -1,0 +1,19 @@
+@startuml
+
+state Recomendacion {
+  [*] --> SinRecomendacion : Usuario registrado sin suscripción
+  
+  state rombo <<choice>>
+
+  SinRecomendacion -r-> rombo : Usuario se suscribe
+  Recomienda <-r- rombo : Hay suficientes datos
+  NoHayDatos <-r- rombo : No hay suficientes datos
+
+  Recomienda --> Categoria : Genera recomendación sobre categoría
+  Categoria --> Contenido : Propone contenido específico
+  Contenido --> [*] : Fin Recomendación
+
+  NoHayDatos --> SinRecomendacion : Espera más datos de usuario
+}
+
+@enduml

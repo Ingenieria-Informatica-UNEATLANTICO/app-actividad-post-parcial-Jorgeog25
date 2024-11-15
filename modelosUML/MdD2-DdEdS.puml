@@ -1,0 +1,13 @@
+@startuml
+
+state Suscripcion {
+  [*] --> Inactiva : Sin suscripción activa
+  
+  Inactiva --> Activa : Usuario realiza un pago
+  Activa --> Renovada : Renovación automática o manual
+  Activa --> Cancelada : Usuario cancela o suscripción expira
+  Renovada --> Activa : Renovación exitosa
+  Cancelada --> Inactiva : Fin del período de suscripción
+}
+
+@enduml
